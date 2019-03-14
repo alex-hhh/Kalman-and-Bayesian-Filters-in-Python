@@ -34,6 +34,9 @@ from kf_book.book_plots import set_figsize, reset_figsize
 if matplotlib.__version__ == '1.4.3':
     warnings.simplefilter(action="ignore", category=FutureWarning)
 
+if matplotlib.__version__ == '3.0.3':
+    warnings.simplefilter(action="ignore", category=FutureWarning)
+    
 try:
     matplotlib.style.use('default')
 except:
